@@ -1,8 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('./css/clash-display.css');
+/* @import url('./fonts/static'); */
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+    sans-serif; */
+    font-family: ClashDisplay-regular;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -10,4 +18,39 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.radialContainer{
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.9), transparent);
+  /* background: radial-gradient(#D434FE, #903AFF); */
+}
+
+.violetFilter{
+  filter: brightness(100%) sepia(120%) hue-rotate(180deg) saturate(600%)
+  /*  */
+  /* sepia(600%) hue-rotate(160deg) saturate(800%); */
+
+  /* sepia(50%) grayscale(100%)  hue-rotate(-200deg) saturate(500%) contrast(9) */
+}
+
+.roundedFilter{
+  border-radius: 50%;
+}
+
+/* from-[#FE34B9] via-[#D434FE] to-[#903AFF] */
+
+.verticalLinear{
+  background: linear-gradient(to bottom, #D434FE, #903AFF);
+}
+
+.whitish{
+  filter: brightness(80%);
+}
+
+.bkgImage{
+  background: url("./assets/premium.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
