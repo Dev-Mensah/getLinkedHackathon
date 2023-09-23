@@ -1,14 +1,14 @@
 import React from "react";
-import bigIdea from "../assets/The-big-idea.png";
-import statrPu from "../assets/star-pu.png";
-import sataGra from "../assets/sata-gra.png";
-import arrowVector from "../assets/arrow.png";
-import Header from "../components/Header";
-import PlainText from "../components/PlainText";
+import bigIdea from "../../assets/The-big-idea.png";
+import statrPu from "../../assets/star-pu.png";
+import sataGra from "../../assets/sata-gra.png";
+import arrowVector from "../../assets/arrow.png";
+import Header from "../../components/Header";
+import PlainText from "../../components/PlainText";
 
 function About() {
   return (
-    <div className="w-full py-5 h-fit lg:p-10 flex-col flex lg:flex lg:flex-row border-b border-gray-500 ">
+    <div className="w-full py-5 h-fit lg:p-10 flex-col flex lg:flex lg:flex-row border-b border-gray-500 relative">
       <div className="mb-10  flex items-center justify-center relative lg:justify-end lg:w-1/2 lg:mb-0 ">
         <div className="w-4/5">
           <div className="w-fit h-fit">

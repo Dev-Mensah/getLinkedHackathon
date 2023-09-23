@@ -1,21 +1,21 @@
 import React from "react";
-import Navbar from "../components/Navbar";
-import curveVector from "../assets/curveVector.png";
-import bulbVector from "../assets/bulb.png";
-import globeImage from "../assets/globe.png";
-import glowLight from "../assets/Purple-Lens-Flare-PNG.png";
-import manGlowLight from "../assets/Purple-lens_man.png";
-import manImage from "../assets/man-wearing-smart-glasses-touching-virtual-screen 1.png";
-import RegisterBtn from "../components/RegisterBtn";
-import chainVector from "../assets/chain.png";
-import fireVector from "../assets/fire.png";
-import brightStar from "../assets/Brightstar.png";
-import dimStar from "../assets/dimStar.png";
+import Navbar from "../../components/Navbar";
+import curveVector from "../../assets/curveVector.png";
+import bulbVector from "../../assets/bulb.png";
+import globeImage from "../../assets/globe.png";
+import glowLight from "../../assets/Purple-Lens-Flare-PNG.png";
+import manImage from "../../assets/man-wearing-smart-glasses-touching-virtual-screen 1.png";
+import RegisterBtn from "../../components/RegisterBtn";
+import chainVector from "../../assets/chain.png";
+import fireVector from "../../assets/fire.png";
+import brightStar from "../../assets/Brightstar.png";
+import dimStar from "../../assets/dimStar.png";
 
 function Home() {
+
   return (
-    <div className=" h-fit  border-b border-gray-500">
-      <Navbar />
+    <div id="Home" className=" h-fit  border-b border-gray-500">
+      <Navbar className="z-[999]" />
       <div className="w-full flex justify-center border-t lg:border-t-0 relative ">
         <div className="w-[10px] h-[12px] lg:w-[26px] lg:h-[32px] absolute bottom-0 lg:bottom-4 left-32 ">
           <img src={brightStar} alt="img" className="object-contain"/>
@@ -32,7 +32,7 @@ function Home() {
       </div>
       <div className="w-full mt-4 lg:mt-0 lg:pt-4 items-center lg:items-start  flex flex-col  lg:flex-row ">
         <div className="w-[260px] flex flex-col lg:pl-16  lg:w-2/4 relative ">
-          <div className="w-fit h-fit absolute top-[-80px] left-[-200px] lg:top-[-230px] lg:right-[-200px] lg:left-auto">
+          <div className="lg:w-96 lg:h-72 absolute top-[-80px] left-[-200px] lg:top-[-100px] lg:left-72 ">
             <img
               src={glowLight}
               alt="img"
@@ -64,8 +64,8 @@ function Home() {
             </p>
           </div>
 
-          <div className="mt-5 mb-7 flex justify-center lg:justify-start">
-            <RegisterBtn text="Register" />
+          <div className="mt-5 mb-7 flex justify-center lg:justify-start z-50">
+            <RegisterBtn link="/register" text="Register" />
           </div>
           <div className="w-full flex gap-4 relative">
             <div className="w-[6px] h-[8px] lg:w-4 lg:h-4 absolute top-[-48px] right-[50px] lg:top-[-20px] lg:right-24">
@@ -100,11 +100,11 @@ function Home() {
               className="w-full h-full object-center violetFilter"
             />
           </div>
-          <div className="hidden lg:block w-fit h-fit rounded-[50%] absolute top-[-180px] right-[0] ">
+          <div className="hidden lg:block w-72 lg:w-96 lg:h-72 rounded-[50%] absolute top-[-25px] right-0 ">
             <img
-              src={manGlowLight}
+              src={glowLight}
               alt="img"
-              className="object-center opacity-50"
+              className="object-contain opacity-50"
             />
           </div>
         </div>

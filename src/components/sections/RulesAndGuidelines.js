@@ -1,15 +1,15 @@
 import React from "react";
-import womanImage from "../assets/womanImage1.png";
-import Header from "../components/Header";
-import PlainText from "../components/PlainText";
-import dimStar from "../assets/dimStar.png";
-import brightStar from "../assets/Brightstar.png";
-import purpleFlare1 from "../assets/rules_guide_purple_flare.png";
-import purpleFlare2 from "../assets/rules_guide_purple_flare2.png";
+import womanImage from "../../assets/womanImage1.png";
+import Header from "../../components/Header";
+import PlainText from "../../components/PlainText";
+import dimStar from "../../assets/dimStar.png";
+import brightStar from "../../assets/Brightstar.png";
+import purpleFlare1 from "../../assets/rules_guide_purple_flare.png";
+import purpleFlare2 from "../../assets/rules_guide_purple_flare2.png";
 
 function RulesAndGuidelines() {
   return (
-    <div className="w-full pt-5 pb-10 flex flex-col-reverse border-b border-gray-500 lg:flex-row">
+    <div id="Overview" className="w-full pt-5 pb-10 flex flex-col-reverse border-b border-gray-500 lg:flex-row">
       <div className="w-full flex flex-col items-center relative lg:w-1/2 lg:justify-center ">
         <div className="w-4/5 ">
           <Header text1="Rules and" text2="Guidelines" />

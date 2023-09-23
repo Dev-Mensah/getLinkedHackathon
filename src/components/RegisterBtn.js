@@ -1,11 +1,12 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function RegisterBtn(props) {
   return (
-    <div>
-      <button className="text-base font-[montserrat] text-white bg-gradient-to-r from-[#FE34B9] via-[#D434FE] to-[#903AFF] py-1 px-7 rounded-sm">
+    <div className="w-full">
+      <Link to={props?.link} type={props?.type} className="w-full text-center text-base font-[montserrat] text-white bg-gradient-to-r from-[#FE34B9] via-[#D434FE] to-[#903AFF] py-2 px-7 rounded-sm">
         {props.text}
-      </button>
+      </Link>
     </div>
   );
 }

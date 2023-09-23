@@ -54,3 +54,103 @@ code {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+
+/* App.css */
+.App {
+  text-align: center;
+  /* margin: 40px; */
+}
+
+/* .menu-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+} */
+
+.modal-overlay {
+  /* position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; */
+  background: rgba(0, 0, 0, 0.5);
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  z-index: 1000;
+}
+
+.modal-content {
+  padding: 30px;
+  margin-top: 30px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 4px;
+  position: relative;
+  max-width: 90%;
+  max-height: 90%;
+  overflow-y: auto;
+}
+
+.modal-close-button {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  color: #888;
+}
+
+.modal-close-button:hover {
+  color: #333;
+}
+
+.inp::placeholder {
+  color: white;
+  opacity: 1; 
+  font-weight: normal;
+}
+
+.active{
+
+}
+
+.no-select {
+  user-select: none;
+  background: linear-gradient(to right,#903AFF,#D434FE, #FE34B9 );
+                    -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+}
+/* from-[#] via-[#] to-[#] */
+
+
+/* .gradientBorder{
+  border-image: linear-gradient(#903AFF, #FE34B9) 17;
+border-width: 1px;
+border-radius: 5px;
+border-style: solid;
+} */
+
+.gradientBorder{
+  position: relative;
+}
+
+.gradientBorder::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 5px; 
+  padding: 1px; 
+  background:linear-gradient(160deg,#903AFF,#FE34B9); 
+  -webkit-mask: 
+     linear-gradient(#fff 0 0) content-box, 
+     linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude; 
+}

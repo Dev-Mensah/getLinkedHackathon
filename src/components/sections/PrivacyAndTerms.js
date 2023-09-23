@@ -1,16 +1,16 @@
 import React from "react";
-import Header from "../components/Header";
-import PlainText from "../components/PlainText";
+import Header from "../../components/Header";
+import PlainText from "../../components/PlainText";
 import CheckCircleIcon from "@mui/icons-material/CheckCircle";
-import RegisterBtn from "../components/RegisterBtn";
-import startPu from "../assets/star-pu.png";
-import starGra from "../assets/sata-gra.png";
-import brightStar from "../assets/Brightstar.png";
-import dimStar from "../assets/dimStar.png";
-import padlockImage from "../assets/padlock.png";
-import padlockguyImage from "../assets/padlockGuy.png";
-import purpleFlare2 from "../assets/rules_guide_purple_flare2.png";
-import purpleFlare1 from "../assets/rules_guide_purple_flare.png";
+import RegisterBtn from "../../components/RegisterBtn";
+import startPu from "../../assets/star-pu.png";
+import starGra from "../../assets/sata-gra.png";
+import brightStar from "../../assets/Brightstar.png";
+import dimStar from "../../assets/dimStar.png";
+import padlockImage from "../../assets/padlock.png";
+import padlockguyImage from "../../assets/padlockGuy.png";
+import purpleFlare2 from "../../assets/rules_guide_purple_flare2.png";
+import purpleFlare1 from "../../assets/rules_guide_purple_flare.png";
 
 function PrivacyAndTerms() {
   return ( 
@@ -77,7 +77,7 @@ function PrivacyAndTerms() {
             </div>
             <div className="w-full flex justify-center items-center py-4">
               <div>
-                <RegisterBtn text="Read More" />
+                <RegisterBtn link="/privacy-more" text="Read More" />
               </div>
             </div>
           </div>

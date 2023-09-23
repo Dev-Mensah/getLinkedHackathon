@@ -1,17 +1,17 @@
 import React from "react";
-import { TextCenter, TextLeft, TextRight } from "../components/TextAlign";
+import { TextCenter, TextLeft, TextRight } from "../../components/TextAlign";
 import {
   TimelineCount,
   timeLineArray1,
   timeLineArray2,
-} from "../utils/textData";
-import dimStar from "../assets/dimStar.png";
-import brightStar from "../assets/Brightstar.png";
-import statrPu from "../assets/star-pu.png";
+} from "../../utils/textData";
+import dimStar from "../../assets/dimStar.png";
+import brightStar from "../../assets/Brightstar.png";
+import statrPu from "../../assets/star-pu.png";
 
 function TimeLineLg() {
   return (
-    <div className="pt-5 pb-10 relative">
+    <div id="Timeline" className="pt-5 pb-10 relative">
       <div className="w-full flex flex-col items-center justify-center mt-10 mb-24 ">
         <p className="font-[ClashDisplay-Bold] text-[32px] text-white">Timeline</p>
         <p className="w-1/4 font-[montserrat] text-center text-[14px] text-white">
@@ -22,7 +22,7 @@ function TimeLineLg() {
       <div className="w-full flex">
         <div className="w-[45%] mt-7 flex flex-col items-end gap-2">
           {timeLineArray1.map((item, index) => (
-            <div className=" w-5/6 h-24 max-h-max flex flex-col justify-center ">
+            <div key={index} className=" w-5/6 h-24 max-h-max flex flex-col justify-center ">
               <TextRight title={item.title} text={item?.text} />
             </div>
           ))}
@@ -39,7 +39,7 @@ function TimeLineLg() {
         </div>
         <div className="w-[45%] mt-7 flex flex-col items-start gap-2 ">
           {timeLineArray2.map((item, index) => (
-            <div className=" w-5/6 h-24 max-h-max flex flex-col justify-center ">
+            <div key={index} className=" w-5/6 h-24 max-h-max flex flex-col justify-center ">
               <TextLeft title={item.title} text={item?.text} />
             </div>
           ))}

@@ -1,10 +1,10 @@
 import React from "react";
-import Header from "../components/Header";
-import partnersImage from "../assets/partnersImage.png";
-import purpleFlare1 from "../assets/rules_guide_purple_flare.png";
-import purpleFlare2 from "../assets/rules_guide_purple_flare2.png";
-import starGra from "../assets/sata-gra.png";
-import brightStar from "../assets/Brightstar.png";
+import Header from "../../components/Header";
+import partnersImage from "../../assets/partnersImage.png";
+import purpleFlare1 from "../../assets/rules_guide_purple_flare.png";
+import purpleFlare2 from "../../assets/rules_guide_purple_flare2.png";
+import starGra from "../../assets/sata-gra.png";
+import brightStar from "../../assets/Brightstar.png";
 
 function Partners() {
   return (

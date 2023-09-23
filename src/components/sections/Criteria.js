@@ -1,14 +1,13 @@
 import React from "react";
-import statImage from "../assets/statImage.png";
-import Header from "../components/Header";
-import ColouredText from "../components/ColouredText";
-import { TextData } from "../utils/textData";
-import RegisterBtn from "../components/RegisterBtn";
-import flare from "../assets/criteria_flare.png";
-import statrPu from "../assets/star-pu.png";
-import dimStar from "../assets/dimStar.png";
-import brightStar from "../assets/Brightstar.png";
-import flare2 from "../assets/criteria_flare2.png"
+import statImage from "../../assets/statImage.png";
+import Header from "../../components/Header";
+import ColouredText from "../../components/ColouredText";
+import { TextData } from "../../utils/textData";
+import RegisterBtn from "../../components/RegisterBtn";
+import flare from "../../assets/criteria_flare.png";
+import statrPu from "../../assets/star-pu.png";
+import dimStar from "../../assets/dimStar.png";
+import brightStar from "../../assets/Brightstar.png";
 
 function Criteria() {
   return (
@@ -46,7 +45,7 @@ function Criteria() {
           ))}
         </div>
         <div className="w-fit h-fit mt-6 cursor-pointer">
-          <RegisterBtn text="Read More" />
+          <RegisterBtn link="/criteria-more" text="Read More" />
         </div>
         {/* <div className="absolute top-28 right-[-250px] lg:top-20 lg:right-[-150px]">
         <img src={flare2} alt="img" className="object-contain opacity-40" />

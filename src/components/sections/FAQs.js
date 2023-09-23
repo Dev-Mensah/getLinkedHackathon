@@ -1,18 +1,18 @@
 import React from "react";
-import Header from "../components/Header";
-import Question from "../components/Question";
-import { questionaires } from "../utils/textData";
-import statrPu from "../assets/star-pu.png";
-import dimStar from "../assets/dimStar.png";
-import brightStar from "../assets/Brightstar.png";
-import casualMan from "../assets/cwok_casual_21 1.png";
-import sataGra from "../assets/sata-gra.png";
-import markLight from "../assets/mark_light.png";
-import markDeep from "../assets/mark_deep.png";
+import Header from "../../components/Header";
+import Question from "../../components/Question";
+import { questionaires } from "../../utils/textData";
+import statrPu from "../../assets/star-pu.png";
+import dimStar from "../../assets/dimStar.png";
+import brightStar from "../../assets/Brightstar.png";
+import casualMan from "../../assets/cwok_casual_21 1.png";
+import sataGra from "../../assets/sata-gra.png";
+import markLight from "../../assets/mark_light.png";
+import markDeep from "../../assets/mark_deep.png";
 
 function FAQs() {
   return (
-    <div className="flex py-12 lg:pt-32 lg:pb-14 flex-wrap justify-center border-b border-gray-500 items-center relative ">
+    <div id="FAQs" className="flex py-12 lg:pt-32 lg:pb-14 flex-wrap justify-center border-b border-gray-500 items-center relative ">
       <div className="w-full lg:w-1/2 flex flex-col items-center  ">
         <div className="w-4/5">
           <Header text1="Frequently Ask" text2="Question" />
@@ -27,7 +27,7 @@ function FAQs() {
         </div>
         <div className="w-4/5 mt-10 flex flex-col items-center lg:items-start lg:justify-start">
           {questionaires.map((item, index) => (
-            <div className="w-[90%] lg:w-[70%]">
+            <div key={index} className="w-[90%] lg:w-[70%]">
               <Question key={index} text={item.text} />
             </div>
           ))}

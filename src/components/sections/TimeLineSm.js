@@ -1,9 +1,9 @@
 import React from "react";
-import BarByText from "../components/BarByText";
-import { TimeLineSmallData } from "../utils/textData";
-import dimStar from "../assets/dimStar.png";
-import brightStar from "../assets/Brightstar.png";
-import statrPu from "../assets/star-pu.png";
+import BarByText from "../../components/BarByText";
+import { TimeLineSmallData } from "../../utils/textData";
+import dimStar from "../../assets/dimStar.png";
+import brightStar from "../../assets/Brightstar.png";
+import statrPu from "../../assets/star-pu.png";
 
 function TimeLineSm() {
   return (

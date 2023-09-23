@@ -1,12 +1,12 @@
 import React from "react";
-import cupImage from "../assets/cup.png";
-import rewardsImage from "../assets/Rewards.png";
-import Header from "../components/Header";
-import starGra from "../assets/sata-gra.png";
-import dimStar from "../assets/dimStar.png";
-import brightStar from "../assets/Brightstar.png";
-import purpleFlare1 from "../assets/rules_guide_purple_flare.png";
-import purpleFlare2 from "../assets/rules_guide_purple_flare2.png";
+import cupImage from "../../assets/cup.png";
+import rewardsImage from "../../assets/Rewards.png";
+import Header from "../../components/Header";
+import starGra from "../../assets/sata-gra.png";
+import dimStar from "../../assets/dimStar.png";
+import brightStar from "../../assets/Brightstar.png";
+import purpleFlare1 from "../../assets/rules_guide_purple_flare.png";
+import purpleFlare2 from "../../assets/rules_guide_purple_flare2.png";
 
 function Rewards() {
   return (
