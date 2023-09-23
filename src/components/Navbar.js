@@ -34,13 +34,13 @@ function Navbar() {
             key={index}
             className={`w-fit p-2 cursor-pointer hover:text-[#D434FE] transition-colors duration-300`}
           >
-            {item === "Contact" ? (
-              location.pathname !== "/Contact" ? (
+            {item.toLowerCase() === "contact" ? (
+              location.pathname.toLowerCase() !== "/contact" ? (
                 <RouteLink
                   to={item.toLocaleLowerCase()}
-                  smooth={true}
-                  offset={0}
-                  duration={500}
+                  // smooth={true}
+                  // offset={0}
+                  // duration={500}
                   className="text-base cursor-pointer"
                 >
                   {item}
@@ -61,7 +61,7 @@ function Navbar() {
             )}
           </li>
         ))}
-        {location.pathname !== "/register" ? (
+        {location.pathname.toLowerCase() !== "/register" ? (
           <div className="ml-14">
             <RegisterBtn link="/register" text="Register" />
           </div>
@@ -91,12 +91,12 @@ function Navbar() {
               className={`w-fit p-2 cursor-pointer hover:text-[#D434FE] transition-colors duration-300`}
             >
               {item === "Contact" ? (
-                location.pathname !== "/Contact" ? (
+                location.pathname.toLowerCase() !== "/contact" ? (
                   <RouteLink
                     to={item}
-                    smooth={true}
-                    offset={0}
-                    duration={500}
+                    // smooth={true}
+                    // offset={0}
+                    // duration={500}
                     className="text-base cursor-pointer"
                   >
                     {item}

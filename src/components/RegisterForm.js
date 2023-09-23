@@ -50,7 +50,7 @@ function RegisterForm() {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
-  console.log(JSON.stringify(formData));
+  // console.log(JSON.stringify(formData));
   const handleSubmit = async (e) => {
     e.preventDefault();
     const apiUrl = baseUrl + "/hackathon/registration";
@@ -65,7 +65,7 @@ function RegisterForm() {
 
       if (response.ok) {
         // Handle successful response
-        console.log("Data sent successfully");
+        // console.log("Data sent successfully");
         setIsRegistered(true);
       } else {
         // Handle error response

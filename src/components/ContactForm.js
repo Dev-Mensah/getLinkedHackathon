@@ -1,7 +1,11 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 function ContactForm() {
 
+  const currentURL = window.location.href;
+  // const baseU = currentURL.toLowerCase()
+  // console.log(baseU.split("contact")[0])
   const baseUrl = "https://backend.getlinked.ai"
   // use state for form data
   const [formData, setFormData] = useState({
@@ -35,7 +39,10 @@ function ContactForm() {
 
       if (response.ok) {
         // Handle successful response
-        console.log("Data sent successfully");
+        alert("Data sent successfully");
+        const baseU = currentURL.toLowerCase()
+        const base = baseU.split("contact")[0]
+        window.open(base, "_self")
       } else {
         // Handle error response
         console.error("Error sending data");

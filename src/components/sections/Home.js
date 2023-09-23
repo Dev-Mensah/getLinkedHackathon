@@ -48,7 +48,7 @@ function Home() {
             getlinked Tech
           </p>
           <p className="text-white font-[ClashDisplay-Bold] text-[32px] lg:text-[70px] leading-none">
-            Hackathon" <span className="text-[#D434FE]">1.0</span>
+            Hackathon <span className="text-[#D434FE]">1.0</span>
           </p>
           <div className="w-8 h-8 lg:w-fit lg:h-fit absolute top-[47px] right-[-3px] lg:top-[60px] lg:right-[-16px]">
             <img src={chainVector} alt="img" className="object-contain" />
