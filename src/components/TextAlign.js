@@ -1,14 +1,16 @@
 import React from "react";
+import TextSlide2 from "./TextSlide2";
+import TextSlideRight from "./TextSlideRight";
 
 export function TextRight(props) {
   return (
     <div className="flex flex-col items-end">
       <p className="w-full text-[#D434FE] text-[22px] text-right font-[montserrat] font-semibold">
-        {props.title}
+      <TextSlideRight text={props.title} />
       </p>
       {props.text && (
         <p className="w-4/5 text-right text-[14px] font-[montserrat] text-white">
-          {props.text}
+          <TextSlideRight text={props.text} />
         </p>
       )}
     </div>
@@ -19,11 +21,11 @@ export function TextLeft(props) {
   return (
     <div className="flex flex-col items-start">
       <p className="w-full text-[#D434FE] text-[22px] text-left font-[montserrat] font-bold">
-        {props.title}
+      <TextSlide2 text= {props.title} />
       </p>
       {props.text && (
         <p className="w-4/5 text-left text-[14px] font-[montserrat] text-white">
-          {props.text}
+          <TextSlide2 text= {props.text} />
         </p>
       )}
     </div>

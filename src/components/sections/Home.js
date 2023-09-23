@@ -10,6 +10,8 @@ import chainVector from "../../assets/chain.png";
 import fireVector from "../../assets/fire.png";
 import brightStar from "../../assets/Brightstar.png";
 import dimStar from "../../assets/dimStar.png";
+import TextSlide2 from "../TextSlide2";
+import TextSlideRight from "../TextSlideRight";
 
 function Home() {
 
@@ -23,7 +25,7 @@ function Home() {
         <div className="hidden lg:block lg:w-1/4 "></div>
         <div className="w-fit lg:mr-10 my-5 lg:my-0 lg:w-3/4 lg:h-[65px] p-2 flex flex-col items-end relative">
           <span className="text-white text-base lg:text-4xl font-bold italic font-[Montserrat] leading-none">
-            Igniting a Revolution in HR Innovation
+            <TextSlideRight text="Igniting a Revolution in HR Innovation" />
           </span>
           <div className=" w-24 absolute right-4 bottom-0 lg:w-52 lg:bottom-1 ">
             <img src={curveVector} alt="img" />
@@ -46,7 +48,7 @@ function Home() {
             getlinked Tech
           </p>
           <p className="text-white font-[ClashDisplay-Bold] text-[32px] lg:text-[70px] leading-none">
-            Hackathon <span className="text-[#D434FE]">1.0</span>
+            Hackathon" <span className="text-[#D434FE]">1.0</span>
           </p>
           <div className="w-8 h-8 lg:w-fit lg:h-fit absolute top-[47px] right-[-3px] lg:top-[60px] lg:right-[-16px]">
             <img src={chainVector} alt="img" className="object-contain" />
@@ -59,8 +61,7 @@ function Home() {
           </div>
           <div className="w-[250px] lg:w-[520px] flex justify:center mt-3 lg:mt-0 pl-3 lg:pl-0 lg:pr-16 ">
             <p className="text-[13px] lg:text-xl text-white font-[Montserrat] text-center  lg:text-left ">
-              Participate in getlinked tech Hackathon 2023 stand a chance to win
-              a Big prize
+              <TextSlide2 text= "Participate in getlinked tech Hackathon 2023 stand a chance to win a Big prize" />
             </p>
           </div>
 

@@ -15,7 +15,7 @@ function BarByText(props) {
       </div>
       <div className="w-[78%] h-fit">
         <p className="w-5/6 h-10   font-[montserrat] flex items-center  text-[12px] text-[#D434FE] text-lg font-bold leading-[1.1]">{props.title}</p>
-        <p className="w-full h-[54px] text-[10px]  text-white font-[montserrat] text-left">{props.text}</p>
+        <p className="w-full h-[54px] text-[11px]  text-white font-[montserrat] text-left">{props.text}</p>
         <p className=" w-5/6 h-8 font-[montserrat]  flex items-end text-lg font-bold text-[#D434FE] text-[12px]">{props.subTitle}</p>
       </div>
     </div>

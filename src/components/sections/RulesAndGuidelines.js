@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import womanImage from "../../assets/womanImage1.png";
 import Header from "../../components/Header";
 import PlainText from "../../components/PlainText";
@@ -6,8 +6,26 @@ import dimStar from "../../assets/dimStar.png";
 import brightStar from "../../assets/Brightstar.png";
 import purpleFlare1 from "../../assets/rules_guide_purple_flare.png";
 import purpleFlare2 from "../../assets/rules_guide_purple_flare2.png";
+import TextSlide from "../TextSlide";
+import { motion } from 'framer-motion';
 
 function RulesAndGuidelines() {
+
+  const [scrollY, setScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollY(window.scrollY);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+
   return (
     <div id="Overview" className="w-full pt-5 pb-10 flex flex-col-reverse border-b border-gray-500 lg:flex-row">
       <div className="w-full flex flex-col items-center relative lg:w-1/2 lg:justify-center ">
@@ -15,13 +33,20 @@ function RulesAndGuidelines() {
           <Header text1="Rules and" text2="Guidelines" />
         </div>
         <div className="w-4/5 z-10">
-          <PlainText
+          {/* <PlainText
             text="Our tech hackathon is a melting pot of visionaries, 
          and its purpose is as clear as day: to shape the future. Whether you're a 
          coding genius, a design maverick, or a concept wizard, you'll have the chance to 
          transform your ideas into reality. Solving real-world problems, pushing the boundaries 
          of technology, and creating solutions that can change the world, that's what we're all about!"
-          />
+          /> */}
+          <TextSlide text="Our tech hackathon is a melting pot of visionaries, 
+         and its purpose is as clear as day: to shape the future. Whether you're a 
+         coding genius, a design maverick, or a concept wizard, you'll have the chance to 
+         transform your ideas into reality. Solving real-world problems, pushing the boundaries 
+         of technology, and creating solutions that can change the world, that's what we're all about!" />
+        
+
         </div>
         <div className="w-3 h-3.5 absolute top-12 right-6 lg:w-[26px] lg:h-[32px] lg:top-44 lg:right-72">
           <img src={dimStar} alt="img" />

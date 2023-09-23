@@ -9,6 +9,7 @@ import purpleFlare1 from "../assets/rules_guide_purple_flare.png";
 import Navbar from "../components/Navbar";
 import backBtn from "../assets/back_btn.png";
 import { Link } from "react-router-dom";
+import TextSlide2 from "../components/TextSlide2";
 
 function ContactUs() {
   return (
@@ -25,27 +26,27 @@ function ContactUs() {
         <div className="hidden lg:flex w-1/2  py-10 flex-col items-center ">
           <div className="w-3/6 z-50">
             <p className="font-[ClashDisplay-SemiBold] text-[32px] text-[#D434FE]">
-              Get in touch
+            <TextSlide2 text="Get in touch" />
             </p>
           </div>
           <div className="w-3/6 my-4 z-50">
             <p className="w-1/4 font-[montserrat] text-[16px] text-white">
-              Contact Information
+            <TextSlide2 text="Contact Information" />
             </p>
           </div>
           <div className="w-3/6 my-2 z-50">
             <p className="w-2/5 font-[montserrat] text-[16px] text-white">
-              27, Alara Street Yaba 100012 Lagos State
+            <TextSlide2 text="27, Alara Street Yaba 100012 Lagos State" />
             </p>
           </div>
           <div className="w-3/6 my-2 z-50">
             <p className="w-4/5 font-[montserrat] text-[16px] text-white">
-              Call Us : 07067981819
+            <TextSlide2 text="Call Us : 07067981819" />
             </p>
           </div>
           <div className="w-3/6 my-2 z-50">
             <p className="w-5/6 font-[montserrat] text-[16px] text-white">
-              we are open from Monday-Friday 08:00am - 05:00pm
+            <TextSlide2 text="we are open from Monday-Friday 08:00am - 05:00pm" />
             </p>
           </div>
           <div className="w-3/6 my-4 z-50">

@@ -12,7 +12,7 @@ function errorPage() {
         </div>
         <div className="w-full flex justify-center ">
           <p className="font-[montserrat] text-center text-[24px] text-white">
-            Ooopsy Page Under Construction
+            Ooops! Page Under Construction
           </p>
         </div>
         {/* <div className="w-3/6 my-3 flex items-center justify-center bg-[#150e28] relative">

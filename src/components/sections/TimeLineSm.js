@@ -7,7 +7,7 @@ import statrPu from "../../assets/star-pu.png";
 
 function TimeLineSm() {
   return (
-    <div className="w-full flex flex-col items-center justify-center pb-20 relative">
+    <div id="Timeline" className="w-full flex flex-col items-center justify-center pb-20 relative">
       <div className="w-full flex flex-col items-center justify-center my-10  ">
         <p className="font-[ClashDisplay-Bold] text-[20px] text-white">Timeline</p>
         <p className="w-4/5 font-[montserrat] text-center text-[14px] text-white">

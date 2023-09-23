@@ -9,6 +9,7 @@ import casualMan from "../../assets/cwok_casual_21 1.png";
 import sataGra from "../../assets/sata-gra.png";
 import markLight from "../../assets/mark_light.png";
 import markDeep from "../../assets/mark_deep.png";
+import TextSlide from "../TextSlide";
 
 function FAQs() {
   return (
@@ -20,8 +21,7 @@ function FAQs() {
         <div className="w-4/5 mt-5 flex justify-center lg:justify-start">
           <div className="w-2/3">
             <p className="text-white text-center lg:text-start font-[montserrat]">
-              We got answers to the questions that you might want to ask about
-              getlinked Hackathon 1.0
+              <TextSlide text="We got answers to the questions that you might want to ask about getlinked Hackathon 1.0" />
             </p>
           </div>
         </div>
@@ -49,13 +49,13 @@ function FAQs() {
       <div className="w-[10px] h-[10px] absolute bottom-[360px] right-[49%]  lg:w-[21px] lg:h-[25px] lg:top-[15%] lg:right-[30%]">
         <img src={sataGra} alt="img" />
       </div>
-      <div className="w-[50px] h-[32px] absolute bottom-[350px] right-[75%]  lg:w-[100px] lg:h-[61px] lg:top-[16%] lg:right-[40%]">
+      <div className="w-[50px] h-[32px] absolute bottom-[380px] right-[75%]  lg:w-[100px] lg:h-[61px] lg:top-[16%] lg:right-[40%]">
         <img src={markLight} alt="img" />
       </div>
-      <div className="w-[50px] h-[31px] absolute bottom-[400px] right-[55%]  lg:w-[100px] lg:h-[61px] lg:top-[6%] lg:right-[30%]">
+      <div className="w-[50px] h-[31px] absolute bottom-[410px] right-[55%]  lg:w-[100px] lg:h-[61px] lg:top-[6%] lg:right-[30%]">
         <img src={markDeep} alt="img" />
       </div>
-      <div className="w-[50px] h-[32px] absolute bottom-[370px] right-[33%]  lg:w-[100px] lg:h-[61px] lg:top-[14%] lg:right-[20%]">
+      <div className="w-[50px] h-[32px] absolute bottom-[380px] right-[33%]  lg:w-[100px] lg:h-[61px] lg:top-[14%] lg:right-[20%]">
         <img src={markLight} alt="img" />
       </div>
 

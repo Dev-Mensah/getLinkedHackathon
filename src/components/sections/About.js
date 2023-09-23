@@ -5,6 +5,7 @@ import sataGra from "../../assets/sata-gra.png";
 import arrowVector from "../../assets/arrow.png";
 import Header from "../../components/Header";
 import PlainText from "../../components/PlainText";
+import TextSlide from "../TextSlide";
 
 function About() {
   return (
@@ -33,7 +34,7 @@ function About() {
           <img src={statrPu} alt="img" className="object-center" />
         </div>
         <div className="w-4/5 flex items-center justify-center">
-          <PlainText
+          <TextSlide
             text="Our tech hackathon is a melting pot of visionaries, and its purpose
             is as clear as day: to shape the future. Whether you're a coding
             genius, a design maverick, or a concept wizard, you'll have the

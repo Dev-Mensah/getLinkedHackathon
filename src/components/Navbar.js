@@ -37,7 +37,7 @@ function Navbar() {
             {item === "Contact" ? (
               location.pathname !== "/Contact" ? (
                 <RouteLink
-                  to={item}
+                  to={item.toLocaleLowerCase()}
                   smooth={true}
                   offset={0}
                   duration={500}
