@@ -7,6 +7,7 @@ import MainPage from "./pages/MainPage";
 import Register from "./pages/Register";
 import ErrorPage from "./pages/ErrorPage";
 import Test from "./pages/Test";
+import Layout from "./Layout";
 
 function App() {
   return (
@@ -17,15 +18,25 @@ function App() {
 
     // <MainPage/>
     // </>
-<>
-    <Routes>
-      <Route path="/" element={<MainPage />} />
-      <Route path="/register" element={<Register />} />
-      <Route path="/contact/" element={<ContactUs />} />
-      
-      <Route path="*" element={<ErrorPage />} />
-    </Routes>
-    
+    <>
+      {/* <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<MainPage />} />
+          <Route path="contact" element={<ContactUs />} />
+          <Route path="register" element={<Register />} />
+        </Route>
+        <Route path="*" element={<ErrorPage />} />
+      </Routes> */}
+
+      <Routes>
+  <Route path="/" element={<Layout />}>
+    <Route index element={<MainPage />} />
+    <Route path="/contact" element={<ContactUs />} />
+    <Route path="register" element={<Register />} />
+  </Route>
+  <Route path="*" element={<ErrorPage />} />
+</Routes>
+
     </>
   );
 }

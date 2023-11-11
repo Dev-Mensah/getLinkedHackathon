@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import ContactForm from "../components/ContactForm";
 import socialsImage from "../assets/Social-media.png";
 import statrPu from "../assets/star-pu.png";
@@ -12,7 +12,18 @@ import { Link } from "react-router-dom";
 import TextSlide2 from "../components/TextSlide2";
 
 function ContactUs() {
+
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    // Simulate a delay for demonstration purposes (remove this in your actual code)
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 2000);
+  }, []);
+
   return (
+    
     <div className="bg-[#150E28] relative overflow-hidden">
       <div className="hidden lg:block w-full">
         <Navbar />

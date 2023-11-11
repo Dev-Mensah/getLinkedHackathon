@@ -166,3 +166,11 @@ border-style: solid;
   opacity: 1;
   transform: translateX(0);
 }
+
+/* src/components/Loading.css */
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}

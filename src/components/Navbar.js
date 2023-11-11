@@ -37,10 +37,7 @@ function Navbar() {
             {item.toLowerCase() === "contact" ? (
               location.pathname.toLowerCase() !== "/contact" ? (
                 <RouteLink
-                  to={item.toLocaleLowerCase()}
-                  // smooth={true}
-                  // offset={0}
-                  // duration={500}
+                  to={'/'+item.toLocaleLowerCase()}
                   className="text-base cursor-pointer"
                 >
                   {item}
